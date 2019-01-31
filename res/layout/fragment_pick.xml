@@ -20,7 +20,8 @@
     android:orientation="horizontal"
     android:baselineAligned="false"
     android:gravity="end"
-    android:paddingEnd="@dimen/bottom_bar_padding_end">
+    android:paddingEnd="@dimen/bottom_bar_padding_end"
+    android:background="@color/window_background">
     <TextView
         style="@style/BottomBarButton"
         android:id="@android:id/button2"
