@@ -44,10 +44,18 @@ public class DocumentsSwipeRefreshLayout extends SwipeRefreshLayout {
         @ColorRes int colorId = a.getResourceId(COLOR_ACCENT_INDEX, -1);
         a.recycle();
         setColorSchemeResources(colorId);
+        setProgressBackgroundColorSchemeColor(getBackground(getContext()));
     }
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent e) {
         return false;
+    }
+
+    public static int getBackground(Context context) {
+        TypedArray array = context.obtainStyledAttributes(new int[]{android.R.attr.navigationBarColor});
+        int color = array.getColor(0, 0);
+        array.recycle();
+        return color;
     }
 }
