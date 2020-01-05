@@ -14,8 +14,10 @@
      limitations under the License.
 -->
 <resources>
-    <color name="app_background_color">#202124</color>
-    <color name="background_floating">#3C4043</color>
+    <color name="statix_color1">@*android:color/primary_device_default_settings</color>
+
+    <color name="app_background_color">@color/statix_color1</color>
+    <color name="background_floating">@color/statix_color1</color>
     <color name="nav_bar_translucent">#52000000</color>
 
     <color name="primary">#8AB4F8</color>
